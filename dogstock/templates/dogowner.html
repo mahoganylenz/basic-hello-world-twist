@@ -1,0 +1,31 @@
+{% extends 'home.html' %}
+<div>
+        <p>
+            <a href= "{% url 'home' %}"> Home </a>
+        </p>
+    
+    </div>
+
+{% block content %}
+    <h2>Dog Owner: {{ stocks }}</h2>
+    <p> Dogs: </p>
+    <ul>
+    {% for dog in dogs %}
+        <li>
+          <a href="{% url 'new_dog' stocks.id %} "> Add a new dog {{ stocks }} </a>
+        </li>
+    {% empty %}    
+        <li> No dog has been added yet.</li>
+        <li>Include Dog Age </li>
+        <li>Dog Id is a number. </li>  
+        </div> 
+    {% endfor %}
+    </ul>
+
+    <a href="{% url 'new_dog' %}"> Click to add a new dog </a>
+
+
+{% endblock content%}  
+</div>
+
+

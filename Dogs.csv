@@ -1,0 +1,9 @@
+DogID,DogName,DogBreed,DogAge,OwnerID
+1,Rex,Border Collie,5,1
+2,Twinky,Golden Retriever,2,1
+3,Gray,Golden Retriever,10,1
+4,Ocean,German Sheppard,3,2
+5,Bobby,Boston Terrier,7,3
+6,Dot,Dalmatian,1,3
+7,Smart,Golden Retriever,2,3
+8,Princess,Golder Doodle,1,3

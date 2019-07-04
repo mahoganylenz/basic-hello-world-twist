@@ -1,0 +1,27 @@
+<div>
+    <p><center>
+        <a href= "{% url 'home' %}"> Home </a> &nbsp;
+        <a href= "{% url 'dogowner' %}"> Add a new Dog </a>
+    </center> 
+    </p>
+
+</div>
+
+<div>
+{% block content %}
+   <h1> Welcome to Dog Stock</h1> 
+   <h2> Enter your dog to be added to the list</h2>
+   <br><br>
+{% endblock content %}
+
+     {% for dog in dogs %}
+        <div class="dogname">
+           <h3>{{ dog.dogName|capfirst }}</h3>
+           <p>{{ dog.dogBreed}}</p>
+           <p>Dog Age: {{ dog.dogAge}}</p>
+           <p>{{dog.dogId}} </p>  
+        
+</div> 
+    {% endfor %}
+        </div>
+

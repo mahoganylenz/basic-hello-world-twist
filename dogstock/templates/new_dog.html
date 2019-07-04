@@ -1,0 +1,13 @@
+<h3>ADD A NEW DOG</h3>
+
+{% extends "dogowner.html" %}
+
+{% block content %}
+    <p>Click to add a new dog</p>
+    <form action= "{% url 'new_dog' %}" method="post">
+        {% csrf_token %}
+        {{ form.as_p }} 
+        <button name="submit"> Add dog</button>
+    </form>
+    
+{% endblock content %}   

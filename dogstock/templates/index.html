@@ -1,0 +1,14 @@
+<div>
+{% for dog in dogs%}
+<div class="dogname">
+    <a href= "{% url 'home' dogs.id %}" >
+        <h3>{{ Dogss.dogName|capfirst }}</h3>
+    </a>
+   <p>{{ Dogss.dogBreed}}</p>
+   <p>Dog Age: {{ Dogss.dogAge}}</p>
+   <p>{{Dogss.dogId}} </p>  
+
+</div>
+
+{% endfor %}
+</div>>
